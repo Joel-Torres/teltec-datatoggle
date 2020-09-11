@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- SITE TITTLE -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teltec</title>
+
+	<!-- PLUGINS CSS STYLE -->
+<!-- Bootstrap -->
+<link href="../plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="../https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<link rel="stylesheet" href="../https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<!-- themify icon -->
+<link rel="stylesheet" href="../plugins/themify-icons/themify-icons.css">
+<!-- Owl Carousel -->
+<link href="../plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+<!-- Owl Carousel Theme -->
+<link href="../plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+<!-- Fancy Box -->
+<link href="../plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+<!-- AOS -->
+<link rel="stylesheet" href="../plugins/aos/aos.css">
+
+<!-- CUSTOM CSS -->
+<link href="/../css/style.css" rel="stylesheet">
+
+<!-- FAVICON -->
+<link href="../images/favicon.ico" rel="shortcut icon">
+
+	<style>
+		@media (max-width:625px) {
+		.banner-text {
+			/* font-weight: 700; */
+			font-size: smaller;
+			margin-top: 30px;
+		  }
+		}
+	</style>
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+		<!-- Header navigation -->
+		<header></header>
+
+	<!--==================================
+=            Hero Section            =
+===================================-->
+
+	<section style="margin-top: 70px;" class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 m-auto">
+					<!-- Banner Contents -->
+					<div class="text-center" >
+						
+						<p class="banner-text text-center" style="font-size: xx-large; color: rgb(85, 20, 20); margin-bottom: 1em;">We really do make security easy. <br>
+							
+                        </p>
+
+                        <h3>Get To Know Us</h3>
+
+                        <p>Tel-Tec Security Systems, Inc. is an independent security locally owned and operated in Bakersfield, California. As a full-service company, Tel-Tec designs, installs, services, maintains and monitors all of the systems we provide.
+
+                            Tel-Tec has been protecting people since 1982. Our highest priorities are the safety, quality and the security of our customers. We strive to provide excellence in customer service.
+                            
+                            Please review our site to learn more about where we came from and the history of our president, as well as some of our accomplishments along the way.</p>
+                            
+                            <div class="motto">
+                                <p>Our Mission: Provide people peace of mind.</p>
+                                <p>How: We make security easy.</p>
+                                <p>Why: We are professionals and passionate about your safety and security.</p>
+                            </div>
+                        
+					</div>
+                </div>
+                
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Hero Section  ====-->
+
+	<!--==============================
+=            Footer Navigation         =
+===============================-->
+
+<footer class="page-footer font-small blue pt-4"></footer>
+
+	<script>
+		fetch("./header-contact.html")
+		.then(response => {
+			return response.text()
+		})
+		.then(data => {
+			document.querySelector("header").innerHTML = data;
+		});
+	</script>
+	
+	<script>
+		fetch("../footer.html")
+		.then(response => {
+		return response.text()
+		})
+		.then(data => {
+		document.querySelector("footer").innerHTML = data;
+		});
+	</script>
+
+    <!-- JAVASCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/reefjs/dist/reef.min.js"></script>
+	<script src="../plugins/jquery/jquery.js"></script>
+	<script src="../plugins/popper/popper.min.js"></script>
+	<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../plugins/fancybox/jquery.fancybox.min.js"></script>
+	<script src="../plugins/syotimer/jquery.syotimer.min.js"></script>
+	<script src="../plugins/aos/aos.js"></script>
+	<!-- google map -->
+	<script src="../https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+	<script src="../plugins/google-map/gmap.js"></script>
+
+    <script src="../js/custom.js"></script>
+	<script src="callus.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- SITE TITTLE -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teltec</title>
+
+	<!-- PLUGINS CSS STYLE -->
+	<!-- Bootstrap -->
+    <link href="../plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+	<link rel="stylesheet" href="../https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<!-- themify icon -->
+	<link rel="stylesheet" href="../plugins/themify-icons/themify-icons.css">
+	<!-- Owl Carousel -->
+	<link href="../plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+	<!-- Owl Carousel Theme -->
+	<link href="../plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+	<!-- Fancy Box -->
+	<link href="../plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	<!-- AOS -->
+	<link rel="stylesheet" href="../plugins/aos/aos.css">
+
+	<!-- CUSTOM CSS -->
+    <link href="/../css/style.css" rel="stylesheet">
+
+	<!-- FAVICON -->
+	<link href="../images/favicon.ico" rel="shortcut icon">
+
+	<style>
+		@media (max-width:625px) {
+		.banner-text {
+			/* font-weight: 700; */
+			font-size: smaller;
+			margin-top: 30px;
+		  }
+		}
+	</style>
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+	<!-- Header navigation -->
+    <header></header>
+
+	<!--==================================
+=            Hero Section            =
+===================================-->
+
+	<section style="margin-top: 70px;" class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 m-auto">
+					<!-- Banner Contents -->
+					<div class="text-center" >
+						
+						<p class="banner-text">We really do make security easy. <br>
+							
+                        </p>
+                        
+                        <div id="wufoo-zkd1hmr0do97gk"> Fill out my <a href="https://teltecsecurity.wufoo.com/forms/zkd1hmr0do97gk">online form</a>. </div> <script type="text/javascript"> var zkd1hmr0do97gk; (function(d, t) { var s = d.createElement(t), options = { 'userName':'teltecsecurity', 'formHash':'zkd1hmr0do97gk', 'autoResize':true, 'height':'717', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { zkd1hmr0do97gk = new WufooForm(); zkd1hmr0do97gk.initialize(options); zkd1hmr0do97gk.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+
+					</div>
+                </div>
+                <div class="col-md-6 m-auto">
+					<!-- Banner Contents -->
+					<table cellpadding="0" cellspacing="0"><tr><td><h1 id="pagetitle">Contact Us</h1></td></tr></table>
+
+
+<table cellpadding="0" cellspacing="0">
+    <tr>
+        <td valign="top" width="200">
+            Tel-Tec Security Systems, Inc.<br />    
+            5020 Lisa Marie Ct.<br />
+            Bakersfield, CA 93313<br />
+            License #472338<br /><br />
+            Phone: &nbsp;&nbsp;&nbsp;&nbsp;(661) 397-5511<br />
+            Toll-Free: (800) 292-9227<br />
+            Fax Line: &nbsp;(661) 834-3616<br /><br />
+            Sales: M-F 8am - 5pm PST<br />
+            Service: 24 hour/7 days
+        </td>
+        <!-- <td valign="top">         
+            <div id="map" style="width: 335px; height: 200px; margin:-50px 0 0 0"><iframe width="335" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=5020+Lisa+Marie+Court,+Bakersfield,+CA&amp;aq=0&amp;oq=5020+lisa+mari&amp;sll=34.020479,-118.411732&amp;sspn=0.854801,1.347198&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=5020+Lisa+Marie+Ct,+Bakersfield,+Kern,+California+93313&amp;z=14&amp;ll=35.308666,-119.061531&amp;output=embed"></iframe></div> 
+        </td> -->
+    </tr>
+    <!-- <tr>
+        <td colspan="2">
+            <img src="assets/teltec2008/images/team-divider.jpg" alt="Divider"  class="team_divider"/>
+        </td>
+
+    </tr> -->
+</table>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--====  End of Hero Section  ====-->
+
+	<!--==============================
+=            Footer Navigation         =
+===============================-->
+
+<footer class="page-footer font-small blue pt-4"></footer>
+
+	<script>
+		fetch("./header-contact.html")
+		.then(response => {
+			return response.text()
+		})
+		.then(data => {
+			document.querySelector("header").innerHTML = data;
+		});
+	</script>
+	
+	<script>
+		fetch("../footer.html")
+		.then(response => {
+		return response.text()
+		})
+		.then(data => {
+		document.querySelector("footer").innerHTML = data;
+		});
+	</script>
+
+    <!-- JAVASCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/reefjs/dist/reef.min.js"></script>
+	<script src="../plugins/jquery/jquery.js"></script>
+	<script src="../plugins/popper/popper.min.js"></script>
+	<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../plugins/fancybox/jquery.fancybox.min.js"></script>
+	<script src="../plugins/syotimer/jquery.syotimer.min.js"></script>
+	<script src="../plugins/aos/aos.js"></script>
+	<!-- google map -->
+	<script src="../https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+	<script src="../plugins/google-map/gmap.js"></script>
+
+    <script src="../js/custom.js"></script>
+	<script src="callus.js"></script>
+</body>
+
+</html>

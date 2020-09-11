@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- SITE TITTLE -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teltec</title>
+
+	<!-- PLUGINS CSS STYLE -->
+	<!-- Bootstrap -->
+    <link href="../../plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+	<link rel="stylesheet" href="../../https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<!-- themify icon -->
+	<link rel="stylesheet" href="../../plugins/themify-icons/themify-icons.css">
+	<!-- Owl Carousel -->
+	<link href="../../plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+	<!-- Owl Carousel Theme -->
+	<link href="../../plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+	<!-- Fancy Box -->
+	<link href="../../plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	<!-- AOS -->
+	<link rel="stylesheet" href="../../plugins/aos/aos.css">
+
+	<!-- CUSTOM CSS -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+	<!-- FAVICON -->
+	<link href="../../images/favicon.ico" rel="shortcut icon">
+
+	<style>
+		@media (max-width:625px) {
+		.banner-text {
+			/* font-weight: 700; */
+			font-size: smaller;
+			margin-top: 30px;
+		  }
+        }
+        
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+	</style>
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+    <!-- Header navigation -->
+    <header></header>
+    
+	<!--==================================
+=            Hero Section            =
+===================================-->
+
+	<section style="margin-top: 70px;" class="banner">
+		<div class="container-fluid">
+            <div class="row generic">
+              <div class="col-sm-4 side-nav">
+                  <div class="well well-lg">
+					  <h4 class="side-bar">Know Your Options</h4>
+					  <p><b>NOT ALL SECURITY SYSTEMS ARE CREATED EQUAL!</b></p>
+                      <p>A Tel-Tec security system is designed to meet your needs and assure your safety. 
+						 Ask us how we can provide you with a system that will:
+					  </p>
+					  <ul>
+						  <li>minimize false alarms</li>
+						  <li>minimize false alarms</li>
+						  <li>work best for your home and family</li>
+					  </ul>
+				  </div>
+				  <div class="well well-lg">
+					<h4 class="side-bar">Areas Within Government Security</h4>
+					<ul>
+						<li><a href="../government/solutions.html" title="Government Security Solutions" >Solutions</a></li>
+						<li><a href="../government/contract-vehicles.html" title="Contract Vehicles" >Contract Vehicles</a></li>
+						<li><a href="../government/school-districts" title="California School Districts" >School Districts</a></li>
+						<li><a href="../government/security-safety" title="Security and Safety" >Security and Safety</a></li>
+						<li><a href="../government/partners" title="Partners and Certifications" >Partners-Certifications</a></li>
+					</ul>
+				</div>
+            
+              </div>
+          
+              <div class="col-sm-8">
+                <h4><small>Preferred Vendor for California Schools</small></h4>
+                <p>Tel-Tec Security Systems, Inc. supports more California School Districts than any other security company with a Government contract vehicle. California schools have found that Tel-Tec is not merely a vendor but a trusted partner.</p>
+                <hr>
+                <br>
+
+                <h4><small>The Cooperative Purchasing Program</small></h4>
+                <p>Tel-Tec is now listed on GSA Advantage. GSA Advantage allows our School Districts, Federal, State and Local Government clients to procure our products and services directly through eBuy. eBuy is an Electronic Request for Quote (RFQ) / Request for Proposal (RFP) system designed to allow School Districts, Federal, State and Local Government clients to obtain products and services through an easy to use online portal.</p>
+                <hr>
+                <br>
+
+                <h4><small>Easy Online Procurement using GSA eBuy</small></h4>
+                <p>The General Services Administration (GSA) allows only two Federal contract vehicles to be used by school districts and state and local government. One is Schedule 84, where Tel-Tec is one of only 120 companies in the Nation authorized to sell to the Federal Government and local School Districts under the same contract vehicle.</p>
+                <p>If your school district does not authorize the use of eBuy or other online procurement system, Tel-Tec will respond to your RFP through your standard process and still provide you with most favored customer pricing, guaranteed by the Government.</p>
+                <hr>
+                <br>
+
+                <h4><small>Sole Source</small></h4>
+                <p>The GSA Schedule is a Government contract vehicle that allows School Districts to purchase our products and services, sole-sourced, up to $3 Million.</p>
+                <hr>
+                <br>
+
+                <h4><small>Get Started</small></h4>
+                <p>To learn more about this special program, please contact Alicia Ashurst.</p>
+                <hr>
+                <br>
+
+                <div id="callus"></div>
+                
+              </div>
+            </div>
+          </div>
+
+	</section>
+
+	<!--====  End of Hero Section  ====-->
+
+	<!--==============================
+=            Footer Navigation         =
+===============================-->
+
+<footer class="page-footer font-small blue pt-4"></footer>
+
+	<script>
+		fetch("./header-gov.html")
+		.then(response => {
+			return response.text()
+		})
+		.then(data => {
+			document.querySelector("header").innerHTML = data;
+		});
+	</script>
+	
+	<script>
+		fetch("../footer.html")
+		.then(response => {
+		return response.text()
+		})
+		.then(data => {
+		document.querySelector("footer").innerHTML = data;
+		});
+	</script>
+
+    <!-- JAVASCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/reefjs/dist/reef.min.js"></script>
+	<script src="../plugins/jquery/jquery.js"></script>
+	<script src="../plugins/popper/popper.min.js"></script>
+	<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../plugins/fancybox/jquery.fancybox.min.js"></script>
+	<script src="../plugins/syotimer/jquery.syotimer.min.js"></script>
+	<script src="../plugins/aos/aos.js"></script>
+	<!-- google map -->
+	<script src="../https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+	<script src="../plugins/google-map/gmap.js"></script>
+
+    <script src="../js/custom.js"></script>
+	<script src="callus.js"></script>
+
+   
+</body>
+
+</html>
